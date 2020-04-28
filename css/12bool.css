@@ -3,12 +3,17 @@
 .debug .container {
   background-color: pink;
   border: 1px solid blue;
-  height: 300px;
+  height: 200px;
 }
 
 [class*="col-"] {
   border: 1px solid blue;
-  height: 300px;
+  height: 200px;
+  text-align: center;
+}
+
+span {
+  line-height: 200px;
 }
 /* Fine regole debug */
 
