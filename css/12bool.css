@@ -1,85 +1,129 @@
 /* REGOLE DEBUGG */
 /* Inizio regole debug */
-.debug .container {
-  background-color: pink;
-  border: 1px solid blue;
-  height: 200px;
-}
+.debug {}
+  .debug .container {
+    background-color: green;
+    border: 1px solid red;
+    height: 200px;
+  }
 
-[class*="col-"] {
-  border: 1px solid blue;
-  height: 200px;
-  text-align: center;
-}
+  .debug [class*="col-"] {
+    background-color: pink;
+    border: 1px solid blue;
+    height: 200px;
+    text-align: center;
+  }
 
-.nested {
-  background-color: lightcoral;
-}
+  .debug .nested {
+    background-color: lightcoral;
+    border: 1px solid white;
+  }
 
-span {
-  line-height: 200px;
-}
+  span {
+    line-height: 200px;
+  }
 /* Fine regole debug */
 
 /* REGOLE FRAMEWORK */
 /* Inizio regole Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* Fine regole Reset */
+reset {}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Fine regole Reset */
 
 /* Inizio regole Container */
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.container {}
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 /* Fine regole Container */
 
 /* Inizio regole Colonne */
-[class*="col-"] {
-  float: left;
-}
-.col-1 {
-  width: calc(100% / 12 * 1)
-}
-.col-2 {
-  width: calc(100% / 12 * 2)
-}
-.col-3 {
-  width: calc(100% / 12 * 3)
-}
-.col-4 {
-  width: calc(100% / 12 * 4)
-}
-.col-5 {
-  width: calc(100% / 12 * 5)
-}
-.col-6 {
-  width: calc(100% / 12 * 6)
-}
-.col-7 {
-  width: calc(100% / 12 * 7)
-}
-.col-8 {
-  width: calc(100% / 12 * 8)
-}
-.col-9 {
-  width: calc(100% / 12 * 9)
-}
-.col-10 {
-  width: calc(100% / 12 * 10)
-}
-.col-11 {
-  width: calc(100% / 12 * 11)
-}
-.col-12 {
-  width: calc(100% / 12 * 12)
-}
+colonne {}
+  [class*="col-"] {
+    float: left;
+  }
+  .col-1 {
+    width: calc(100% / 12 * 1)
+  }
+  .col-2 {
+    width: calc(100% / 12 * 2)
+  }
+  .col-3 {
+    width: calc(100% / 12 * 3)
+  }
+  .col-4 {
+    width: calc(100% / 12 * 4)
+  }
+  .col-5 {
+    width: calc(100% / 12 * 5)
+  }
+  .col-6 {
+    width: calc(100% / 12 * 6)
+  }
+  .col-7 {
+    width: calc(100% / 12 * 7)
+  }
+  .col-8 {
+    width: calc(100% / 12 * 8)
+  }
+  .col-9 {
+    width: calc(100% / 12 * 9)
+  }
+  .col-10 {
+    width: calc(100% / 12 * 10)
+  }
+  .col-11 {
+    width: calc(100% / 12 * 11)
+  }
+  .col-12 {
+    width: calc(100% / 12 * 12)
+  }
 /* Fine regole Colonne */
+
+/* REGOLE OFFSET */
+/* Inizio regole Offset */
+offset {}
+  .offset-1 {
+    margin-left: calc(100% / 12 * 1)
+  }
+  .offset-2 {
+    margin-left: calc(100% / 12 * 2)
+  }
+  .offset-3 {
+    margin-left: calc(100% / 12 * 3)
+  }
+  .offset-4 {
+    margin-left: calc(100% / 12 * 4)
+  }
+  .offset-5 {
+    margin-left: calc(100% / 12 * 5)
+  }
+  .offset-6 {
+    margin-left: calc(100% / 12 * 6)
+  }
+  .offset-7 {
+    margin-left: calc(100% / 12 * 7)
+  }
+  .offset-8 {
+    margin-left: calc(100% / 12 * 8)
+  }
+  .offset-9 {
+    margin-left: calc(100% / 12 * 9)
+  }
+  .offset-10 {
+    margin-left: calc(100% / 12 * 10)
+  }
+  .offset-11 {
+    margin-left: calc(100% / 12 * 11)
+  }
+/* Fine regole Offeset */
